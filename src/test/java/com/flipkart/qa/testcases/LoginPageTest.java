@@ -1,7 +1,5 @@
 package com.flipkart.qa.testcases;
 
-
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -40,10 +38,15 @@ public class LoginPageTest extends TestBase{
 	@Test(priority=2)
 	public void loginTest() throws Exception
 	{
-		util=new TestUtil();
-		String m = util.setMapData().get("username");
-		System.out.println(m);
-		homePage= loginpage.login(m,obj.getProperty("password"));
+		//util=new TestUtil();
+		
+		
+		
+		
+		//String m=;
+		
+		
+		homePage= loginpage.login(TestUtil.getData().get("username"),TestUtil.getData().get("password"));
 	}
 	
 	

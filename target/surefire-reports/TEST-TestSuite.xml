@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="TestSuite" time="9.822" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="TestSuite" time="11.32" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
@@ -27,9 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Arun Palackan\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2837417039339090879.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Arun Palackan\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3772323747284460688.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_291/bin/server;C:/Program Files/Java/jre1.8.0_291/bin;C:/Program Files/Java/jre1.8.0_291/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Arun Palackan\AppData\Local\Microsoft\WindowsApps;C:\Users\Arun Palackan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_291\bin;;C:\Users\Arun Palackan\Downloads\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_291/bin/server;C:/Program Files/Java/jre1.8.0_291/bin;C:/Program Files/Java/jre1.8.0_291/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Arun Palackan\AppData\Local\Microsoft\WindowsApps;C:\Users\Arun Palackan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_291\bin;;C:\Users\Arun Palackan\Downloads\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,9 +61,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.flipkart.qa.testcases.HomePageTest" name="searchItem" time="2.817"/>
-  <testcase classname="com.flipkart.qa.testcases.HomePageTest" name="testMyname" time="6.367"/>
-  <testcase classname="com.flipkart.qa.testcases.HomePageTest" name="verifyHomepageTitle" time="0.011"/>
-  <testcase classname="com.flipkart.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.016"/>
-  <testcase classname="com.flipkart.qa.testcases.LoginPageTest" name="loginTest" time="0.611"/>
+  <testcase classname="com.flipkart.qa.testcases.FInalPaymentPageTest" name="enterCardDetails" time="2.225"/>
+  <testcase classname="com.flipkart.qa.testcases.HomePageTest" name="searchItem" time="0.157"/>
+  <testcase classname="com.flipkart.qa.testcases.HomePageTest" name="testMyname" time="2.358"/>
+  <testcase classname="com.flipkart.qa.testcases.HomePageTest" name="verifyHomepageTitle" time="0.007"/>
+  <testcase classname="com.flipkart.qa.testcases.PaymentPageTest" name="AcceptTermsAndCondi" time="3.782"/>
+  <testcase classname="com.flipkart.qa.testcases.PaymentPageTest" name="confirmOrder" time="2"/>
+  <testcase classname="com.flipkart.qa.testcases.PaymentPageTest" name="verifyTitle" time="0.013"/>
+  <testcase classname="com.flipkart.qa.testcases.LoginPageTest" name="loginPageTitleTest" time="0.004"/>
+  <testcase classname="com.flipkart.qa.testcases.LoginPageTest" name="loginTest" time="0.774"/>
 </testsuite>

@@ -2,41 +2,42 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Flipkart Application Test Automation Test Suite]">
   <listeners>
-    <listener class-name="com.qa.extentReportListener.ExtendReportListener"/>
+    <listener class-name="com.flipkart.qa.ExtentReport.ExtentReportListener"/>
   </listeners>
   <test name="Flipkart App Test Cases(failed)">
     <classes>
-      <class name="com.flipkart.qa.testcases.PaymentPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.flipkart.qa.testcases.PaymentPageTest -->
-      <class name="com.flipkart.qa.testcases.FInalPaymentPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.flipkart.qa.testcases.FInalPaymentPageTest -->
-      <class name="com.flipkart.qa.testcases.itemPagetest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="BuyNow"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.flipkart.qa.testcases.itemPagetest -->
-      <class name="com.flipkart.qa.testcases.HomePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.flipkart.qa.testcases.HomePageTest -->
       <class name="com.flipkart.qa.testcases.LoginPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.flipkart.qa.testcases.LoginPageTest -->
+      <class name="com.flipkart.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.flipkart.qa.testcases.HomePageTest -->
+      <class name="com.flipkart.qa.testcases.PaymentPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="confirmOrder"/>
+          <include name="verifyTitle"/>
+        </methods>
+      </class> <!-- com.flipkart.qa.testcases.PaymentPageTest -->
+      <class name="com.flipkart.qa.testcases.itemPagetest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.flipkart.qa.testcases.itemPagetest -->
+      <class name="com.flipkart.qa.testcases.FInalPaymentPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.flipkart.qa.testcases.FInalPaymentPageTest -->
     </classes>
   </test> <!-- Flipkart App Test Cases(failed) -->
 </suite> <!-- Failed suite [Flipkart Application Test Automation Test Suite] -->

@@ -1,6 +1,7 @@
 package com.flipkart.qa.testcases;
 
-import org.junit.Assert;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -34,8 +35,9 @@ public class PaymentPageTest extends TestBase{
 		homepage=new HomePage();
 		loginpage=new LoginPage();
 		loginpage.login(obj.getProperty("username"),obj.getProperty("password"));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		homepage.search(obj.getProperty("searchkey"));
+		Thread.sleep(1000);
 		itempage.selectIphone();
 		util.navigateToNextTab();
 		itempage.buyNow();

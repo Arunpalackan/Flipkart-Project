@@ -1,15 +1,16 @@
 package com.flipkart.qa.util;
 
-import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
+
 import java.util.Set;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
+
+
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -40,23 +41,23 @@ public class TestUtil extends TestBase{
         }
 	}
 	
-	public   HashMap<String, String> setMapData() throws Exception 
+	/*public   HashMap<String, String> setMapData() throws Exception 
 	{
 		XSSFWorkbook wb;
 		XSSFSheet sheet1;
-		File excel=new File("C:\\\\Users\\\\Arun Palackan\\\\Desktop\\\\sel\\\\sampleXclFile.xlsx");
+		File excel=new File("C:\\Users\\Arun Palackan\\Desktop\\sel\\sampleXclFile.xlsx");
 		FileInputStream fis=new FileInputStream(excel);
 		wb= new XSSFWorkbook(fis);
 		sheet1=wb.getSheetAt(0);		
 		HashMap<String,String> data=new HashMap<String,String>();
 		int lastRow = sheet1.getLastRowNum();	
-	    for(int i=1; i<=lastRow; i++)
+	    for(int i=0; i<lastRow; i++)
 	    {
 	    	 Row row = sheet1.getRow(i);
 	    	 Cell keyCell = row.getCell(0);
 	    	 Cell valueCell = row.getCell(1);
-			 String value = valueCell.getStringCellValue().trim();
-			 String key = keyCell.getStringCellValue().trim();
+			 String value = valueCell.getStringCellValue();
+			 String key = keyCell.getStringCellValue();
 			 data.put(key, value);
 
 	    }
@@ -64,5 +65,25 @@ public class TestUtil extends TestBase{
 		return data;
 		
 	}
+*/
+	public static HashMap<String,String> getData() throws IOException{
+		HashMap<String, String> excel= new HashMap<String, String> ();
+
+		try {
+		FileInputStream fs = new FileInputStream(obj.getProperty("excelsheetpath"));
+		//Creating a workbook
+		@SuppressWarnings("resource")
+		XSSFWorkbook workbook = new XSSFWorkbook(fs);
+		XSSFSheet sheet = workbook.getSheet("sample");
+
+		for(int i=0;i<5;i++) {
+		excel.put(sheet.getRow(0).getCell(i).toString(),sheet.getRow(1).getCell(i).toString());
+		}
+		} catch (FileNotFoundException e) {
+		e.printStackTrace();
+
+		}
+		return excel;
+		}
 
 }

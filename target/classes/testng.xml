@@ -3,7 +3,7 @@
 <suite name="Flipkart Application Test Automation Test Suite">
 
 	<listeners>
-		<listener class-name="com.qa.extentReportListener.ExtendReportListener" />
+		<listener class-name="com.flipkart.qa.ExtentReport.ExtentReportListener" />
 	</listeners>
 
 

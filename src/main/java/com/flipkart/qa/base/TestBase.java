@@ -37,6 +37,10 @@ public class TestBase {
 		driver.get(obj.getProperty("url"));
 		
 	}
+	public WebDriver getDriver() {
+		
+		return driver;
+	}
 	
 
 }
